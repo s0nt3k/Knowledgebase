@@ -1,0 +1,5611 @@
+{
+  "generated_at": "2025-10-01T00:00:00Z",
+  "notes": [
+    "This file lists commonly-observed SMART/Health attributes for drive manufacturers.",
+    "ATA/IDE/SATA/SCSI attributes use numeric attribute IDs; NVMe exposes a SMART/Health log with named fields.",
+    "Manufacturers often implement vendor-specific attributes in addition to the common ones below. For authoritative per-model lists consult vendor datasheets or smartmontools / vendor tech docs."
+  ],
+  "manufacturers": [
+    {
+      "manufacturer": "Seagate",
+      "common_types": [
+        "SATA",
+        "NVMe",
+        "SCSI"
+      ],
+      "notes": "This is a best-effort list of commonly observed attributes. For model-specific attribute maps consult vendor datasheets or smartmontools/CrystalDiskInfo output.",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Read Error Rate",
+          "description": "Rate of hardware read errors reported by the drive.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Spin-Up Time",
+          "description": "Average time to spin up the drive (vendor-dependent units).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Start/Stop Count",
+          "description": "Number of start/stop cycles (power/parking events).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Reallocated Sectors Count",
+          "description": "Count of bad sectors remapped to spare area.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Seek Error Rate",
+          "description": "Rate of errors while seeking, vendor-dependent.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Seek Time Performance",
+          "description": "Drive seek time performance metric (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Power-On Hours",
+          "description": "Total powered-on time of the drive (hours).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Spin Retry Count",
+          "description": "Number of spin-up retries.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Power Cycle Count",
+          "description": "Number of full power cycles.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 194,
+          "name": "Temperature (Degree C)",
+          "description": "Reported drive temperature.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 196,
+          "name": "Reallocation Event Count",
+          "description": "Count of remap (reallocation) operations.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 197,
+          "name": "Current Pending Sector Count",
+          "description": "Number of unstable sectors pending remap.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 198,
+          "name": "Uncorrectable Sector Count",
+          "description": "Count of uncorrectable read/write errors.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 199,
+          "name": "UltraDMA CRC Error Count",
+          "description": "Count of interface CRC errors (cabling/connection issues).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Critical Warning",
+          "description": "Composite critical warning bits (available spare, temp, reliability, read-only, volatile backup failed).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Composite Temperature",
+          "description": "Composite temperature (Kelvin-based field).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare",
+          "description": "Percentage of remaining spare capacity.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare Threshold",
+          "description": "Threshold for available spare (below means warning).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Percentage Used",
+          "description": "Percentage of drive life used (wear indicator).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Read",
+          "description": "Count of host data units read (units are device-specific).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Written",
+          "description": "Count of host data units written.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Read Commands",
+          "description": "Number of host read commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Write Commands",
+          "description": "Number of host write commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Controller Busy Time",
+          "description": "Controller busy time (milliseconds).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power Cycles",
+          "description": "Number of power cycles.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power On Hours",
+          "description": "Total power on hours.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Unsafe Shutdowns",
+          "description": "Number of unsafe shutdowns.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Media and Data Integrity Errors",
+          "description": "Count of media/data integrity errors.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Error Information Log Entries",
+          "description": "Number of error-information log entries.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": 193,
+          "name": "Load Cycle Count (vendor)",
+          "description": "Head load/unload cycles (vendor-defined)",
+          "types": [
+            "IDE",
+            "SATA"
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "Western Digital",
+      "common_types": [
+        "SATA",
+        "NVMe",
+        "SCSI"
+      ],
+      "notes": "This is a best-effort list of commonly observed attributes. For model-specific attribute maps consult vendor datasheets or smartmontools/CrystalDiskInfo output.",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Read Error Rate",
+          "description": "Rate of hardware read errors reported by the drive.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Spin-Up Time",
+          "description": "Average time to spin up the drive (vendor-dependent units).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Start/Stop Count",
+          "description": "Number of start/stop cycles (power/parking events).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Reallocated Sectors Count",
+          "description": "Count of bad sectors remapped to spare area.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Seek Error Rate",
+          "description": "Rate of errors while seeking, vendor-dependent.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Seek Time Performance",
+          "description": "Drive seek time performance metric (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Power-On Hours",
+          "description": "Total powered-on time of the drive (hours).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Spin Retry Count",
+          "description": "Number of spin-up retries.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Power Cycle Count",
+          "description": "Number of full power cycles.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 194,
+          "name": "Temperature (Degree C)",
+          "description": "Reported drive temperature.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 196,
+          "name": "Reallocation Event Count",
+          "description": "Count of remap (reallocation) operations.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 197,
+          "name": "Current Pending Sector Count",
+          "description": "Number of unstable sectors pending remap.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 198,
+          "name": "Uncorrectable Sector Count",
+          "description": "Count of uncorrectable read/write errors.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 199,
+          "name": "UltraDMA CRC Error Count",
+          "description": "Count of interface CRC errors (cabling/connection issues).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Critical Warning",
+          "description": "Composite critical warning bits (available spare, temp, reliability, read-only, volatile backup failed).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Composite Temperature",
+          "description": "Composite temperature (Kelvin-based field).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare",
+          "description": "Percentage of remaining spare capacity.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare Threshold",
+          "description": "Threshold for available spare (below means warning).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Percentage Used",
+          "description": "Percentage of drive life used (wear indicator).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Read",
+          "description": "Count of host data units read (units are device-specific).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Written",
+          "description": "Count of host data units written.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Read Commands",
+          "description": "Number of host read commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Write Commands",
+          "description": "Number of host write commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Controller Busy Time",
+          "description": "Controller busy time (milliseconds).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power Cycles",
+          "description": "Number of power cycles.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power On Hours",
+          "description": "Total power on hours.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Unsafe Shutdowns",
+          "description": "Number of unsafe shutdowns.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Media and Data Integrity Errors",
+          "description": "Count of media/data integrity errors.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Error Information Log Entries",
+          "description": "Number of error-information log entries.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": 240,
+          "name": "Head Flying Hours (vendor)",
+          "description": "Head flying related time (vendor-specific unit).",
+          "types": [
+            "IDE",
+            "SATA"
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "Toshiba",
+      "common_types": [
+        "SATA",
+        "NVMe",
+        "SCSI"
+      ],
+      "notes": "This is a best-effort list of commonly observed attributes. For model-specific attribute maps consult vendor datasheets or smartmontools/CrystalDiskInfo output.",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Read Error Rate",
+          "description": "Rate of hardware read errors reported by the drive.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Spin-Up Time",
+          "description": "Average time to spin up the drive (vendor-dependent units).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Start/Stop Count",
+          "description": "Number of start/stop cycles (power/parking events).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Reallocated Sectors Count",
+          "description": "Count of bad sectors remapped to spare area.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Seek Error Rate",
+          "description": "Rate of errors while seeking, vendor-dependent.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Seek Time Performance",
+          "description": "Drive seek time performance metric (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Power-On Hours",
+          "description": "Total powered-on time of the drive (hours).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Spin Retry Count",
+          "description": "Number of spin-up retries.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Power Cycle Count",
+          "description": "Number of full power cycles.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 194,
+          "name": "Temperature (Degree C)",
+          "description": "Reported drive temperature.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 196,
+          "name": "Reallocation Event Count",
+          "description": "Count of remap (reallocation) operations.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 197,
+          "name": "Current Pending Sector Count",
+          "description": "Number of unstable sectors pending remap.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 198,
+          "name": "Uncorrectable Sector Count",
+          "description": "Count of uncorrectable read/write errors.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 199,
+          "name": "UltraDMA CRC Error Count",
+          "description": "Count of interface CRC errors (cabling/connection issues).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Critical Warning",
+          "description": "Composite critical warning bits (available spare, temp, reliability, read-only, volatile backup failed).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Composite Temperature",
+          "description": "Composite temperature (Kelvin-based field).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare",
+          "description": "Percentage of remaining spare capacity.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare Threshold",
+          "description": "Threshold for available spare (below means warning).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Percentage Used",
+          "description": "Percentage of drive life used (wear indicator).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Read",
+          "description": "Count of host data units read (units are device-specific).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Written",
+          "description": "Count of host data units written.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Read Commands",
+          "description": "Number of host read commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Write Commands",
+          "description": "Number of host write commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Controller Busy Time",
+          "description": "Controller busy time (milliseconds).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power Cycles",
+          "description": "Number of power cycles.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power On Hours",
+          "description": "Total power on hours.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Unsafe Shutdowns",
+          "description": "Number of unsafe shutdowns.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Media and Data Integrity Errors",
+          "description": "Count of media/data integrity errors.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Error Information Log Entries",
+          "description": "Number of error-information log entries.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": 192,
+          "name": "Power-Off Retract Count",
+          "description": "Counts retracts on power-off (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA"
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "Kioxia",
+      "common_types": [
+        "SATA",
+        "NVMe",
+        "SCSI"
+      ],
+      "notes": "This is a best-effort list of commonly observed attributes. For model-specific attribute maps consult vendor datasheets or smartmontools/CrystalDiskInfo output.",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Read Error Rate",
+          "description": "Rate of hardware read errors reported by the drive.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Spin-Up Time",
+          "description": "Average time to spin up the drive (vendor-dependent units).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Start/Stop Count",
+          "description": "Number of start/stop cycles (power/parking events).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Reallocated Sectors Count",
+          "description": "Count of bad sectors remapped to spare area.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Seek Error Rate",
+          "description": "Rate of errors while seeking, vendor-dependent.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Seek Time Performance",
+          "description": "Drive seek time performance metric (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Power-On Hours",
+          "description": "Total powered-on time of the drive (hours).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Spin Retry Count",
+          "description": "Number of spin-up retries.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Power Cycle Count",
+          "description": "Number of full power cycles.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 194,
+          "name": "Temperature (Degree C)",
+          "description": "Reported drive temperature.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 196,
+          "name": "Reallocation Event Count",
+          "description": "Count of remap (reallocation) operations.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 197,
+          "name": "Current Pending Sector Count",
+          "description": "Number of unstable sectors pending remap.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 198,
+          "name": "Uncorrectable Sector Count",
+          "description": "Count of uncorrectable read/write errors.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 199,
+          "name": "UltraDMA CRC Error Count",
+          "description": "Count of interface CRC errors (cabling/connection issues).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Critical Warning",
+          "description": "Composite critical warning bits (available spare, temp, reliability, read-only, volatile backup failed).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Composite Temperature",
+          "description": "Composite temperature (Kelvin-based field).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare",
+          "description": "Percentage of remaining spare capacity.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare Threshold",
+          "description": "Threshold for available spare (below means warning).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Percentage Used",
+          "description": "Percentage of drive life used (wear indicator).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Read",
+          "description": "Count of host data units read (units are device-specific).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Written",
+          "description": "Count of host data units written.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Read Commands",
+          "description": "Number of host read commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Write Commands",
+          "description": "Number of host write commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Controller Busy Time",
+          "description": "Controller busy time (milliseconds).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power Cycles",
+          "description": "Number of power cycles.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power On Hours",
+          "description": "Total power on hours.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Unsafe Shutdowns",
+          "description": "Number of unsafe shutdowns.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Media and Data Integrity Errors",
+          "description": "Count of media/data integrity errors.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Error Information Log Entries",
+          "description": "Number of error-information log entries.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": 249,
+          "name": "NAND Writes (1GiB)",
+          "description": "Total NAND writes reported in 1GB increments.",
+          "types": [
+            "NVMe",
+            "SATA"
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "Samsung",
+      "common_types": [
+        "SATA",
+        "NVMe",
+        "SCSI"
+      ],
+      "notes": "This is a best-effort list of commonly observed attributes. For model-specific attribute maps consult vendor datasheets or smartmontools/CrystalDiskInfo output.",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Read Error Rate",
+          "description": "Rate of hardware read errors reported by the drive.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Spin-Up Time",
+          "description": "Average time to spin up the drive (vendor-dependent units).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Start/Stop Count",
+          "description": "Number of start/stop cycles (power/parking events).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Reallocated Sectors Count",
+          "description": "Count of bad sectors remapped to spare area.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Seek Error Rate",
+          "description": "Rate of errors while seeking, vendor-dependent.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Seek Time Performance",
+          "description": "Drive seek time performance metric (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Power-On Hours",
+          "description": "Total powered-on time of the drive (hours).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Spin Retry Count",
+          "description": "Number of spin-up retries.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Power Cycle Count",
+          "description": "Number of full power cycles.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 194,
+          "name": "Temperature (Degree C)",
+          "description": "Reported drive temperature.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 196,
+          "name": "Reallocation Event Count",
+          "description": "Count of remap (reallocation) operations.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 197,
+          "name": "Current Pending Sector Count",
+          "description": "Number of unstable sectors pending remap.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 198,
+          "name": "Uncorrectable Sector Count",
+          "description": "Count of uncorrectable read/write errors.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 199,
+          "name": "UltraDMA CRC Error Count",
+          "description": "Count of interface CRC errors (cabling/connection issues).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Critical Warning",
+          "description": "Composite critical warning bits (available spare, temp, reliability, read-only, volatile backup failed).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Composite Temperature",
+          "description": "Composite temperature (Kelvin-based field).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare",
+          "description": "Percentage of remaining spare capacity.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare Threshold",
+          "description": "Threshold for available spare (below means warning).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Percentage Used",
+          "description": "Percentage of drive life used (wear indicator).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Read",
+          "description": "Count of host data units read (units are device-specific).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Written",
+          "description": "Count of host data units written.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Read Commands",
+          "description": "Number of host read commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Write Commands",
+          "description": "Number of host write commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Controller Busy Time",
+          "description": "Controller busy time (milliseconds).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power Cycles",
+          "description": "Number of power cycles.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power On Hours",
+          "description": "Total power on hours.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Unsafe Shutdowns",
+          "description": "Number of unsafe shutdowns.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Media and Data Integrity Errors",
+          "description": "Count of media/data integrity errors.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Error Information Log Entries",
+          "description": "Number of error-information log entries.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": 233,
+          "name": "Media Wearout Indicator",
+          "description": "SSD media wear indicator (vendor-specific)",
+          "types": [
+            "NVMe",
+            "SATA"
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "HGST (Hitachi)",
+      "common_types": [
+        "SATA",
+        "NVMe",
+        "SCSI"
+      ],
+      "notes": "This is a best-effort list of commonly observed attributes. For model-specific attribute maps consult vendor datasheets or smartmontools/CrystalDiskInfo output.",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Read Error Rate",
+          "description": "Rate of hardware read errors reported by the drive.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Spin-Up Time",
+          "description": "Average time to spin up the drive (vendor-dependent units).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Start/Stop Count",
+          "description": "Number of start/stop cycles (power/parking events).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Reallocated Sectors Count",
+          "description": "Count of bad sectors remapped to spare area.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Seek Error Rate",
+          "description": "Rate of errors while seeking, vendor-dependent.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Seek Time Performance",
+          "description": "Drive seek time performance metric (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Power-On Hours",
+          "description": "Total powered-on time of the drive (hours).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Spin Retry Count",
+          "description": "Number of spin-up retries.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Power Cycle Count",
+          "description": "Number of full power cycles.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 194,
+          "name": "Temperature (Degree C)",
+          "description": "Reported drive temperature.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 196,
+          "name": "Reallocation Event Count",
+          "description": "Count of remap (reallocation) operations.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 197,
+          "name": "Current Pending Sector Count",
+          "description": "Number of unstable sectors pending remap.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 198,
+          "name": "Uncorrectable Sector Count",
+          "description": "Count of uncorrectable read/write errors.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 199,
+          "name": "UltraDMA CRC Error Count",
+          "description": "Count of interface CRC errors (cabling/connection issues).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Critical Warning",
+          "description": "Composite critical warning bits (available spare, temp, reliability, read-only, volatile backup failed).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Composite Temperature",
+          "description": "Composite temperature (Kelvin-based field).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare",
+          "description": "Percentage of remaining spare capacity.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare Threshold",
+          "description": "Threshold for available spare (below means warning).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Percentage Used",
+          "description": "Percentage of drive life used (wear indicator).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Read",
+          "description": "Count of host data units read (units are device-specific).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Written",
+          "description": "Count of host data units written.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Read Commands",
+          "description": "Number of host read commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Write Commands",
+          "description": "Number of host write commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Controller Busy Time",
+          "description": "Controller busy time (milliseconds).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power Cycles",
+          "description": "Number of power cycles.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power On Hours",
+          "description": "Total power on hours.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Unsafe Shutdowns",
+          "description": "Number of unsafe shutdowns.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Media and Data Integrity Errors",
+          "description": "Count of media/data integrity errors.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Error Information Log Entries",
+          "description": "Number of error-information log entries.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": 184,
+          "name": "End-to-End Error",
+          "description": "Controller end-to-end error count (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "Intel",
+      "common_types": [
+        "SATA",
+        "NVMe",
+        "SCSI"
+      ],
+      "notes": "This is a best-effort list of commonly observed attributes. For model-specific attribute maps consult vendor datasheets or smartmontools/CrystalDiskInfo output.",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Read Error Rate",
+          "description": "Rate of hardware read errors reported by the drive.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Spin-Up Time",
+          "description": "Average time to spin up the drive (vendor-dependent units).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Start/Stop Count",
+          "description": "Number of start/stop cycles (power/parking events).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Reallocated Sectors Count",
+          "description": "Count of bad sectors remapped to spare area.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Seek Error Rate",
+          "description": "Rate of errors while seeking, vendor-dependent.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Seek Time Performance",
+          "description": "Drive seek time performance metric (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Power-On Hours",
+          "description": "Total powered-on time of the drive (hours).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Spin Retry Count",
+          "description": "Number of spin-up retries.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Power Cycle Count",
+          "description": "Number of full power cycles.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 194,
+          "name": "Temperature (Degree C)",
+          "description": "Reported drive temperature.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 196,
+          "name": "Reallocation Event Count",
+          "description": "Count of remap (reallocation) operations.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 197,
+          "name": "Current Pending Sector Count",
+          "description": "Number of unstable sectors pending remap.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 198,
+          "name": "Uncorrectable Sector Count",
+          "description": "Count of uncorrectable read/write errors.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 199,
+          "name": "UltraDMA CRC Error Count",
+          "description": "Count of interface CRC errors (cabling/connection issues).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Critical Warning",
+          "description": "Composite critical warning bits (available spare, temp, reliability, read-only, volatile backup failed).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Composite Temperature",
+          "description": "Composite temperature (Kelvin-based field).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare",
+          "description": "Percentage of remaining spare capacity.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare Threshold",
+          "description": "Threshold for available spare (below means warning).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Percentage Used",
+          "description": "Percentage of drive life used (wear indicator).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Read",
+          "description": "Count of host data units read (units are device-specific).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Written",
+          "description": "Count of host data units written.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Read Commands",
+          "description": "Number of host read commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Write Commands",
+          "description": "Number of host write commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Controller Busy Time",
+          "description": "Controller busy time (milliseconds).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power Cycles",
+          "description": "Number of power cycles.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power On Hours",
+          "description": "Total power on hours.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Unsafe Shutdowns",
+          "description": "Number of unsafe shutdowns.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Media and Data Integrity Errors",
+          "description": "Count of media/data integrity errors.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Error Information Log Entries",
+          "description": "Number of error-information log entries.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": 240,
+          "name": "Thermal Throttle Status",
+          "description": "Thermal throttling indicator (vendor-defined).",
+          "types": [
+            "NVMe",
+            "SATA"
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "Micron (Crucial)",
+      "common_types": [
+        "SATA",
+        "NVMe",
+        "SCSI"
+      ],
+      "notes": "This is a best-effort list of commonly observed attributes. For model-specific attribute maps consult vendor datasheets or smartmontools/CrystalDiskInfo output.",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Read Error Rate",
+          "description": "Rate of hardware read errors reported by the drive.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Spin-Up Time",
+          "description": "Average time to spin up the drive (vendor-dependent units).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Start/Stop Count",
+          "description": "Number of start/stop cycles (power/parking events).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Reallocated Sectors Count",
+          "description": "Count of bad sectors remapped to spare area.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Seek Error Rate",
+          "description": "Rate of errors while seeking, vendor-dependent.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Seek Time Performance",
+          "description": "Drive seek time performance metric (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Power-On Hours",
+          "description": "Total powered-on time of the drive (hours).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Spin Retry Count",
+          "description": "Number of spin-up retries.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Power Cycle Count",
+          "description": "Number of full power cycles.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 194,
+          "name": "Temperature (Degree C)",
+          "description": "Reported drive temperature.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 196,
+          "name": "Reallocation Event Count",
+          "description": "Count of remap (reallocation) operations.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 197,
+          "name": "Current Pending Sector Count",
+          "description": "Number of unstable sectors pending remap.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 198,
+          "name": "Uncorrectable Sector Count",
+          "description": "Count of uncorrectable read/write errors.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 199,
+          "name": "UltraDMA CRC Error Count",
+          "description": "Count of interface CRC errors (cabling/connection issues).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Critical Warning",
+          "description": "Composite critical warning bits (available spare, temp, reliability, read-only, volatile backup failed).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Composite Temperature",
+          "description": "Composite temperature (Kelvin-based field).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare",
+          "description": "Percentage of remaining spare capacity.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare Threshold",
+          "description": "Threshold for available spare (below means warning).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Percentage Used",
+          "description": "Percentage of drive life used (wear indicator).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Read",
+          "description": "Count of host data units read (units are device-specific).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Written",
+          "description": "Count of host data units written.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Read Commands",
+          "description": "Number of host read commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Write Commands",
+          "description": "Number of host write commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Controller Busy Time",
+          "description": "Controller busy time (milliseconds).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power Cycles",
+          "description": "Number of power cycles.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power On Hours",
+          "description": "Total power on hours.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Unsafe Shutdowns",
+          "description": "Number of unsafe shutdowns.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Media and Data Integrity Errors",
+          "description": "Count of media/data integrity errors.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Error Information Log Entries",
+          "description": "Number of error-information log entries.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": 232,
+          "name": "Available Reserved Space",
+          "description": "Reserved block/spare space info (vendor-specific).",
+          "types": [
+            "NVMe",
+            "SATA"
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "SK hynix",
+      "common_types": [
+        "SATA",
+        "NVMe",
+        "SCSI"
+      ],
+      "notes": "This is a best-effort list of commonly observed attributes. For model-specific attribute maps consult vendor datasheets or smartmontools/CrystalDiskInfo output.",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Read Error Rate",
+          "description": "Rate of hardware read errors reported by the drive.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Spin-Up Time",
+          "description": "Average time to spin up the drive (vendor-dependent units).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Start/Stop Count",
+          "description": "Number of start/stop cycles (power/parking events).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Reallocated Sectors Count",
+          "description": "Count of bad sectors remapped to spare area.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Seek Error Rate",
+          "description": "Rate of errors while seeking, vendor-dependent.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Seek Time Performance",
+          "description": "Drive seek time performance metric (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Power-On Hours",
+          "description": "Total powered-on time of the drive (hours).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Spin Retry Count",
+          "description": "Number of spin-up retries.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Power Cycle Count",
+          "description": "Number of full power cycles.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 194,
+          "name": "Temperature (Degree C)",
+          "description": "Reported drive temperature.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 196,
+          "name": "Reallocation Event Count",
+          "description": "Count of remap (reallocation) operations.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 197,
+          "name": "Current Pending Sector Count",
+          "description": "Number of unstable sectors pending remap.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 198,
+          "name": "Uncorrectable Sector Count",
+          "description": "Count of uncorrectable read/write errors.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 199,
+          "name": "UltraDMA CRC Error Count",
+          "description": "Count of interface CRC errors (cabling/connection issues).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Critical Warning",
+          "description": "Composite critical warning bits (available spare, temp, reliability, read-only, volatile backup failed).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Composite Temperature",
+          "description": "Composite temperature (Kelvin-based field).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare",
+          "description": "Percentage of remaining spare capacity.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare Threshold",
+          "description": "Threshold for available spare (below means warning).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Percentage Used",
+          "description": "Percentage of drive life used (wear indicator).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Read",
+          "description": "Count of host data units read (units are device-specific).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Written",
+          "description": "Count of host data units written.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Read Commands",
+          "description": "Number of host read commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Write Commands",
+          "description": "Number of host write commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Controller Busy Time",
+          "description": "Controller busy time (milliseconds).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power Cycles",
+          "description": "Number of power cycles.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power On Hours",
+          "description": "Total power on hours.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Unsafe Shutdowns",
+          "description": "Number of unsafe shutdowns.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Media and Data Integrity Errors",
+          "description": "Count of media/data integrity errors.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Error Information Log Entries",
+          "description": "Number of error-information log entries.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": 230,
+          "name": "Program Fail Count",
+          "description": "Count of NAND program failures (vendor-specific).",
+          "types": [
+            "NVMe",
+            "SATA"
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "Kingston",
+      "common_types": [
+        "SATA",
+        "NVMe",
+        "SCSI"
+      ],
+      "notes": "This is a best-effort list of commonly observed attributes. For model-specific attribute maps consult vendor datasheets or smartmontools/CrystalDiskInfo output.",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Read Error Rate",
+          "description": "Rate of hardware read errors reported by the drive.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Spin-Up Time",
+          "description": "Average time to spin up the drive (vendor-dependent units).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Start/Stop Count",
+          "description": "Number of start/stop cycles (power/parking events).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Reallocated Sectors Count",
+          "description": "Count of bad sectors remapped to spare area.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Seek Error Rate",
+          "description": "Rate of errors while seeking, vendor-dependent.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Seek Time Performance",
+          "description": "Drive seek time performance metric (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Power-On Hours",
+          "description": "Total powered-on time of the drive (hours).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Spin Retry Count",
+          "description": "Number of spin-up retries.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Power Cycle Count",
+          "description": "Number of full power cycles.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 194,
+          "name": "Temperature (Degree C)",
+          "description": "Reported drive temperature.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 196,
+          "name": "Reallocation Event Count",
+          "description": "Count of remap (reallocation) operations.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 197,
+          "name": "Current Pending Sector Count",
+          "description": "Number of unstable sectors pending remap.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 198,
+          "name": "Uncorrectable Sector Count",
+          "description": "Count of uncorrectable read/write errors.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 199,
+          "name": "UltraDMA CRC Error Count",
+          "description": "Count of interface CRC errors (cabling/connection issues).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Critical Warning",
+          "description": "Composite critical warning bits (available spare, temp, reliability, read-only, volatile backup failed).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Composite Temperature",
+          "description": "Composite temperature (Kelvin-based field).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare",
+          "description": "Percentage of remaining spare capacity.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare Threshold",
+          "description": "Threshold for available spare (below means warning).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Percentage Used",
+          "description": "Percentage of drive life used (wear indicator).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Read",
+          "description": "Count of host data units read (units are device-specific).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Written",
+          "description": "Count of host data units written.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Read Commands",
+          "description": "Number of host read commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Write Commands",
+          "description": "Number of host write commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Controller Busy Time",
+          "description": "Controller busy time (milliseconds).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power Cycles",
+          "description": "Number of power cycles.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power On Hours",
+          "description": "Total power on hours.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Unsafe Shutdowns",
+          "description": "Number of unsafe shutdowns.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Media and Data Integrity Errors",
+          "description": "Count of media/data integrity errors.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Error Information Log Entries",
+          "description": "Number of error-information log entries.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": 250,
+          "name": "Read Error Retry Rate",
+          "description": "Read-retry related metric (vendor-specific), often used on SSDs.",
+          "types": [
+            "NVMe",
+            "SATA"
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "SanDisk",
+      "common_types": [
+        "SATA",
+        "NVMe",
+        "SCSI"
+      ],
+      "notes": "This is a best-effort list of commonly observed attributes. For model-specific attribute maps consult vendor datasheets or smartmontools/CrystalDiskInfo output.",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Read Error Rate",
+          "description": "Rate of hardware read errors reported by the drive.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Spin-Up Time",
+          "description": "Average time to spin up the drive (vendor-dependent units).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Start/Stop Count",
+          "description": "Number of start/stop cycles (power/parking events).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Reallocated Sectors Count",
+          "description": "Count of bad sectors remapped to spare area.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Seek Error Rate",
+          "description": "Rate of errors while seeking, vendor-dependent.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Seek Time Performance",
+          "description": "Drive seek time performance metric (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Power-On Hours",
+          "description": "Total powered-on time of the drive (hours).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Spin Retry Count",
+          "description": "Number of spin-up retries.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Power Cycle Count",
+          "description": "Number of full power cycles.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 194,
+          "name": "Temperature (Degree C)",
+          "description": "Reported drive temperature.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 196,
+          "name": "Reallocation Event Count",
+          "description": "Count of remap (reallocation) operations.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 197,
+          "name": "Current Pending Sector Count",
+          "description": "Number of unstable sectors pending remap.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 198,
+          "name": "Uncorrectable Sector Count",
+          "description": "Count of uncorrectable read/write errors.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 199,
+          "name": "UltraDMA CRC Error Count",
+          "description": "Count of interface CRC errors (cabling/connection issues).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Critical Warning",
+          "description": "Composite critical warning bits (available spare, temp, reliability, read-only, volatile backup failed).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Composite Temperature",
+          "description": "Composite temperature (Kelvin-based field).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare",
+          "description": "Percentage of remaining spare capacity.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare Threshold",
+          "description": "Threshold for available spare (below means warning).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Percentage Used",
+          "description": "Percentage of drive life used (wear indicator).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Read",
+          "description": "Count of host data units read (units are device-specific).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Written",
+          "description": "Count of host data units written.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Read Commands",
+          "description": "Number of host read commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Write Commands",
+          "description": "Number of host write commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Controller Busy Time",
+          "description": "Controller busy time (milliseconds).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power Cycles",
+          "description": "Number of power cycles.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power On Hours",
+          "description": "Total power on hours.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Unsafe Shutdowns",
+          "description": "Number of unsafe shutdowns.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Media and Data Integrity Errors",
+          "description": "Count of media/data integrity errors.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Error Information Log Entries",
+          "description": "Number of error-information log entries.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": 241,
+          "name": "Total LBAs Written",
+          "description": "Total LBAs written (vendor-specific representation).",
+          "types": [
+            "NVMe",
+            "SATA"
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "Corsair",
+      "common_types": [
+        "SATA",
+        "NVMe",
+        "SCSI"
+      ],
+      "notes": "This is a best-effort list of commonly observed attributes. For model-specific attribute maps consult vendor datasheets or smartmontools/CrystalDiskInfo output.",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Read Error Rate",
+          "description": "Rate of hardware read errors reported by the drive.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Spin-Up Time",
+          "description": "Average time to spin up the drive (vendor-dependent units).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Start/Stop Count",
+          "description": "Number of start/stop cycles (power/parking events).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Reallocated Sectors Count",
+          "description": "Count of bad sectors remapped to spare area.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Seek Error Rate",
+          "description": "Rate of errors while seeking, vendor-dependent.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Seek Time Performance",
+          "description": "Drive seek time performance metric (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Power-On Hours",
+          "description": "Total powered-on time of the drive (hours).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Spin Retry Count",
+          "description": "Number of spin-up retries.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Power Cycle Count",
+          "description": "Number of full power cycles.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 194,
+          "name": "Temperature (Degree C)",
+          "description": "Reported drive temperature.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 196,
+          "name": "Reallocation Event Count",
+          "description": "Count of remap (reallocation) operations.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 197,
+          "name": "Current Pending Sector Count",
+          "description": "Number of unstable sectors pending remap.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 198,
+          "name": "Uncorrectable Sector Count",
+          "description": "Count of uncorrectable read/write errors.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 199,
+          "name": "UltraDMA CRC Error Count",
+          "description": "Count of interface CRC errors (cabling/connection issues).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Critical Warning",
+          "description": "Composite critical warning bits (available spare, temp, reliability, read-only, volatile backup failed).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Composite Temperature",
+          "description": "Composite temperature (Kelvin-based field).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare",
+          "description": "Percentage of remaining spare capacity.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare Threshold",
+          "description": "Threshold for available spare (below means warning).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Percentage Used",
+          "description": "Percentage of drive life used (wear indicator).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Read",
+          "description": "Count of host data units read (units are device-specific).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Written",
+          "description": "Count of host data units written.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Read Commands",
+          "description": "Number of host read commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Write Commands",
+          "description": "Number of host write commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Controller Busy Time",
+          "description": "Controller busy time (milliseconds).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power Cycles",
+          "description": "Number of power cycles.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power On Hours",
+          "description": "Total power on hours.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Unsafe Shutdowns",
+          "description": "Number of unsafe shutdowns.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Media and Data Integrity Errors",
+          "description": "Count of media/data integrity errors.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Error Information Log Entries",
+          "description": "Number of error-information log entries.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": 241,
+          "name": "Total LBAs Written",
+          "description": "Total LBAs written (vendor-specific representation).",
+          "types": [
+            "NVMe",
+            "SATA"
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "ADATA",
+      "common_types": [
+        "SATA",
+        "NVMe",
+        "SCSI"
+      ],
+      "notes": "This is a best-effort list of commonly observed attributes. For model-specific attribute maps consult vendor datasheets or smartmontools/CrystalDiskInfo output.",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Read Error Rate",
+          "description": "Rate of hardware read errors reported by the drive.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Spin-Up Time",
+          "description": "Average time to spin up the drive (vendor-dependent units).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Start/Stop Count",
+          "description": "Number of start/stop cycles (power/parking events).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Reallocated Sectors Count",
+          "description": "Count of bad sectors remapped to spare area.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Seek Error Rate",
+          "description": "Rate of errors while seeking, vendor-dependent.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Seek Time Performance",
+          "description": "Drive seek time performance metric (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Power-On Hours",
+          "description": "Total powered-on time of the drive (hours).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Spin Retry Count",
+          "description": "Number of spin-up retries.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Power Cycle Count",
+          "description": "Number of full power cycles.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 194,
+          "name": "Temperature (Degree C)",
+          "description": "Reported drive temperature.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 196,
+          "name": "Reallocation Event Count",
+          "description": "Count of remap (reallocation) operations.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 197,
+          "name": "Current Pending Sector Count",
+          "description": "Number of unstable sectors pending remap.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 198,
+          "name": "Uncorrectable Sector Count",
+          "description": "Count of uncorrectable read/write errors.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 199,
+          "name": "UltraDMA CRC Error Count",
+          "description": "Count of interface CRC errors (cabling/connection issues).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Critical Warning",
+          "description": "Composite critical warning bits (available spare, temp, reliability, read-only, volatile backup failed).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Composite Temperature",
+          "description": "Composite temperature (Kelvin-based field).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare",
+          "description": "Percentage of remaining spare capacity.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare Threshold",
+          "description": "Threshold for available spare (below means warning).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Percentage Used",
+          "description": "Percentage of drive life used (wear indicator).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Read",
+          "description": "Count of host data units read (units are device-specific).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Written",
+          "description": "Count of host data units written.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Read Commands",
+          "description": "Number of host read commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Write Commands",
+          "description": "Number of host write commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Controller Busy Time",
+          "description": "Controller busy time (milliseconds).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power Cycles",
+          "description": "Number of power cycles.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power On Hours",
+          "description": "Total power on hours.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Unsafe Shutdowns",
+          "description": "Number of unsafe shutdowns.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Media and Data Integrity Errors",
+          "description": "Count of media/data integrity errors.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Error Information Log Entries",
+          "description": "Number of error-information log entries.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": 234,
+          "name": "Wear Leveling Count",
+          "description": "SSD wear-leveling metric (vendor-specific).",
+          "types": [
+            "NVMe",
+            "SATA"
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "Sabrent",
+      "common_types": [
+        "SATA",
+        "NVMe",
+        "SCSI"
+      ],
+      "notes": "This is a best-effort list of commonly observed attributes. For model-specific attribute maps consult vendor datasheets or smartmontools/CrystalDiskInfo output.",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Read Error Rate",
+          "description": "Rate of hardware read errors reported by the drive.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Spin-Up Time",
+          "description": "Average time to spin up the drive (vendor-dependent units).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Start/Stop Count",
+          "description": "Number of start/stop cycles (power/parking events).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Reallocated Sectors Count",
+          "description": "Count of bad sectors remapped to spare area.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Seek Error Rate",
+          "description": "Rate of errors while seeking, vendor-dependent.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Seek Time Performance",
+          "description": "Drive seek time performance metric (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Power-On Hours",
+          "description": "Total powered-on time of the drive (hours).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Spin Retry Count",
+          "description": "Number of spin-up retries.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Power Cycle Count",
+          "description": "Number of full power cycles.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 194,
+          "name": "Temperature (Degree C)",
+          "description": "Reported drive temperature.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 196,
+          "name": "Reallocation Event Count",
+          "description": "Count of remap (reallocation) operations.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 197,
+          "name": "Current Pending Sector Count",
+          "description": "Number of unstable sectors pending remap.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 198,
+          "name": "Uncorrectable Sector Count",
+          "description": "Count of uncorrectable read/write errors.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 199,
+          "name": "UltraDMA CRC Error Count",
+          "description": "Count of interface CRC errors (cabling/connection issues).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Critical Warning",
+          "description": "Composite critical warning bits (available spare, temp, reliability, read-only, volatile backup failed).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Composite Temperature",
+          "description": "Composite temperature (Kelvin-based field).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare",
+          "description": "Percentage of remaining spare capacity.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare Threshold",
+          "description": "Threshold for available spare (below means warning).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Percentage Used",
+          "description": "Percentage of drive life used (wear indicator).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Read",
+          "description": "Count of host data units read (units are device-specific).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Written",
+          "description": "Count of host data units written.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Read Commands",
+          "description": "Number of host read commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Write Commands",
+          "description": "Number of host write commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Controller Busy Time",
+          "description": "Controller busy time (milliseconds).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power Cycles",
+          "description": "Number of power cycles.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power On Hours",
+          "description": "Total power on hours.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Unsafe Shutdowns",
+          "description": "Number of unsafe shutdowns.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Media and Data Integrity Errors",
+          "description": "Count of media/data integrity errors.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Error Information Log Entries",
+          "description": "Number of error-information log entries.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": 252,
+          "name": "Newly Added Bad Flash Block",
+          "description": "Count of newly discovered bad flash blocks.",
+          "types": [
+            "NVMe",
+            "SATA"
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "Transcend",
+      "common_types": [
+        "SATA",
+        "NVMe",
+        "SCSI"
+      ],
+      "notes": "This is a best-effort list of commonly observed attributes. For model-specific attribute maps consult vendor datasheets or smartmontools/CrystalDiskInfo output.",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Read Error Rate",
+          "description": "Rate of hardware read errors reported by the drive.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Spin-Up Time",
+          "description": "Average time to spin up the drive (vendor-dependent units).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Start/Stop Count",
+          "description": "Number of start/stop cycles (power/parking events).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Reallocated Sectors Count",
+          "description": "Count of bad sectors remapped to spare area.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Seek Error Rate",
+          "description": "Rate of errors while seeking, vendor-dependent.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Seek Time Performance",
+          "description": "Drive seek time performance metric (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Power-On Hours",
+          "description": "Total powered-on time of the drive (hours).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Spin Retry Count",
+          "description": "Number of spin-up retries.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Power Cycle Count",
+          "description": "Number of full power cycles.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 194,
+          "name": "Temperature (Degree C)",
+          "description": "Reported drive temperature.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 196,
+          "name": "Reallocation Event Count",
+          "description": "Count of remap (reallocation) operations.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 197,
+          "name": "Current Pending Sector Count",
+          "description": "Number of unstable sectors pending remap.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 198,
+          "name": "Uncorrectable Sector Count",
+          "description": "Count of uncorrectable read/write errors.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 199,
+          "name": "UltraDMA CRC Error Count",
+          "description": "Count of interface CRC errors (cabling/connection issues).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Critical Warning",
+          "description": "Composite critical warning bits (available spare, temp, reliability, read-only, volatile backup failed).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Composite Temperature",
+          "description": "Composite temperature (Kelvin-based field).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare",
+          "description": "Percentage of remaining spare capacity.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare Threshold",
+          "description": "Threshold for available spare (below means warning).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Percentage Used",
+          "description": "Percentage of drive life used (wear indicator).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Read",
+          "description": "Count of host data units read (units are device-specific).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Written",
+          "description": "Count of host data units written.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Read Commands",
+          "description": "Number of host read commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Write Commands",
+          "description": "Number of host write commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Controller Busy Time",
+          "description": "Controller busy time (milliseconds).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power Cycles",
+          "description": "Number of power cycles.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power On Hours",
+          "description": "Total power on hours.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Unsafe Shutdowns",
+          "description": "Number of unsafe shutdowns.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Media and Data Integrity Errors",
+          "description": "Count of media/data integrity errors.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Error Information Log Entries",
+          "description": "Number of error-information log entries.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": 246,
+          "name": "Host Writes",
+          "description": "Host write counter (vendor-specific).",
+          "types": [
+            "NVMe",
+            "SATA"
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "PNY",
+      "common_types": [
+        "SATA",
+        "NVMe",
+        "SCSI"
+      ],
+      "notes": "This is a best-effort list of commonly observed attributes. For model-specific attribute maps consult vendor datasheets or smartmontools/CrystalDiskInfo output.",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Read Error Rate",
+          "description": "Rate of hardware read errors reported by the drive.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Spin-Up Time",
+          "description": "Average time to spin up the drive (vendor-dependent units).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Start/Stop Count",
+          "description": "Number of start/stop cycles (power/parking events).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Reallocated Sectors Count",
+          "description": "Count of bad sectors remapped to spare area.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Seek Error Rate",
+          "description": "Rate of errors while seeking, vendor-dependent.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Seek Time Performance",
+          "description": "Drive seek time performance metric (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Power-On Hours",
+          "description": "Total powered-on time of the drive (hours).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Spin Retry Count",
+          "description": "Number of spin-up retries.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Power Cycle Count",
+          "description": "Number of full power cycles.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 194,
+          "name": "Temperature (Degree C)",
+          "description": "Reported drive temperature.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 196,
+          "name": "Reallocation Event Count",
+          "description": "Count of remap (reallocation) operations.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 197,
+          "name": "Current Pending Sector Count",
+          "description": "Number of unstable sectors pending remap.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 198,
+          "name": "Uncorrectable Sector Count",
+          "description": "Count of uncorrectable read/write errors.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 199,
+          "name": "UltraDMA CRC Error Count",
+          "description": "Count of interface CRC errors (cabling/connection issues).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Critical Warning",
+          "description": "Composite critical warning bits (available spare, temp, reliability, read-only, volatile backup failed).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Composite Temperature",
+          "description": "Composite temperature (Kelvin-based field).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare",
+          "description": "Percentage of remaining spare capacity.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare Threshold",
+          "description": "Threshold for available spare (below means warning).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Percentage Used",
+          "description": "Percentage of drive life used (wear indicator).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Read",
+          "description": "Count of host data units read (units are device-specific).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Written",
+          "description": "Count of host data units written.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Read Commands",
+          "description": "Number of host read commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Write Commands",
+          "description": "Number of host write commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Controller Busy Time",
+          "description": "Controller busy time (milliseconds).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power Cycles",
+          "description": "Number of power cycles.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power On Hours",
+          "description": "Total power on hours.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Unsafe Shutdowns",
+          "description": "Number of unsafe shutdowns.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Media and Data Integrity Errors",
+          "description": "Count of media/data integrity errors.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Error Information Log Entries",
+          "description": "Number of error-information log entries.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": 233,
+          "name": "Media Wearout Indicator",
+          "description": "SSD media wear indicator (vendor-specific)",
+          "types": [
+            "NVMe",
+            "SATA"
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "Plextor",
+      "common_types": [
+        "SATA",
+        "NVMe",
+        "SCSI"
+      ],
+      "notes": "This is a best-effort list of commonly observed attributes. For model-specific attribute maps consult vendor datasheets or smartmontools/CrystalDiskInfo output.",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Read Error Rate",
+          "description": "Rate of hardware read errors reported by the drive.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Spin-Up Time",
+          "description": "Average time to spin up the drive (vendor-dependent units).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Start/Stop Count",
+          "description": "Number of start/stop cycles (power/parking events).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Reallocated Sectors Count",
+          "description": "Count of bad sectors remapped to spare area.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Seek Error Rate",
+          "description": "Rate of errors while seeking, vendor-dependent.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Seek Time Performance",
+          "description": "Drive seek time performance metric (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Power-On Hours",
+          "description": "Total powered-on time of the drive (hours).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Spin Retry Count",
+          "description": "Number of spin-up retries.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Power Cycle Count",
+          "description": "Number of full power cycles.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 194,
+          "name": "Temperature (Degree C)",
+          "description": "Reported drive temperature.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 196,
+          "name": "Reallocation Event Count",
+          "description": "Count of remap (reallocation) operations.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 197,
+          "name": "Current Pending Sector Count",
+          "description": "Number of unstable sectors pending remap.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 198,
+          "name": "Uncorrectable Sector Count",
+          "description": "Count of uncorrectable read/write errors.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 199,
+          "name": "UltraDMA CRC Error Count",
+          "description": "Count of interface CRC errors (cabling/connection issues).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Critical Warning",
+          "description": "Composite critical warning bits (available spare, temp, reliability, read-only, volatile backup failed).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Composite Temperature",
+          "description": "Composite temperature (Kelvin-based field).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare",
+          "description": "Percentage of remaining spare capacity.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare Threshold",
+          "description": "Threshold for available spare (below means warning).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Percentage Used",
+          "description": "Percentage of drive life used (wear indicator).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Read",
+          "description": "Count of host data units read (units are device-specific).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Written",
+          "description": "Count of host data units written.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Read Commands",
+          "description": "Number of host read commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Write Commands",
+          "description": "Number of host write commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Controller Busy Time",
+          "description": "Controller busy time (milliseconds).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power Cycles",
+          "description": "Number of power cycles.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power On Hours",
+          "description": "Total power on hours.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Unsafe Shutdowns",
+          "description": "Number of unsafe shutdowns.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Media and Data Integrity Errors",
+          "description": "Count of media/data integrity errors.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Error Information Log Entries",
+          "description": "Number of error-information log entries.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": 250,
+          "name": "Read Error Retry Rate",
+          "description": "Read-retry related metric (vendor-specific).",
+          "types": [
+            "NVMe",
+            "SATA"
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "Fujitsu",
+      "common_types": [
+        "SATA",
+        "NVMe",
+        "SCSI"
+      ],
+      "notes": "This is a best-effort list of commonly observed attributes. For model-specific attribute maps consult vendor datasheets or smartmontools/CrystalDiskInfo output.",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Read Error Rate",
+          "description": "Rate of hardware read errors reported by the drive.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Spin-Up Time",
+          "description": "Average time to spin up the drive (vendor-dependent units).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Start/Stop Count",
+          "description": "Number of start/stop cycles (power/parking events).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Reallocated Sectors Count",
+          "description": "Count of bad sectors remapped to spare area.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Seek Error Rate",
+          "description": "Rate of errors while seeking, vendor-dependent.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Seek Time Performance",
+          "description": "Drive seek time performance metric (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Power-On Hours",
+          "description": "Total powered-on time of the drive (hours).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Spin Retry Count",
+          "description": "Number of spin-up retries.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Power Cycle Count",
+          "description": "Number of full power cycles.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 194,
+          "name": "Temperature (Degree C)",
+          "description": "Reported drive temperature.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 196,
+          "name": "Reallocation Event Count",
+          "description": "Count of remap (reallocation) operations.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 197,
+          "name": "Current Pending Sector Count",
+          "description": "Number of unstable sectors pending remap.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 198,
+          "name": "Uncorrectable Sector Count",
+          "description": "Count of uncorrectable read/write errors.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 199,
+          "name": "UltraDMA CRC Error Count",
+          "description": "Count of interface CRC errors (cabling/connection issues).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Critical Warning",
+          "description": "Composite critical warning bits (available spare, temp, reliability, read-only, volatile backup failed).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Composite Temperature",
+          "description": "Composite temperature (Kelvin-based field).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare",
+          "description": "Percentage of remaining spare capacity.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare Threshold",
+          "description": "Threshold for available spare (below means warning).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Percentage Used",
+          "description": "Percentage of drive life used (wear indicator).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Read",
+          "description": "Count of host data units read (units are device-specific).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Written",
+          "description": "Count of host data units written.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Read Commands",
+          "description": "Number of host read commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Write Commands",
+          "description": "Number of host write commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Controller Busy Time",
+          "description": "Controller busy time (milliseconds).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power Cycles",
+          "description": "Number of power cycles.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power On Hours",
+          "description": "Total power on hours.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Unsafe Shutdowns",
+          "description": "Number of unsafe shutdowns.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Media and Data Integrity Errors",
+          "description": "Count of media/data integrity errors.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Error Information Log Entries",
+          "description": "Number of error-information log entries.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": 181,
+          "name": "Program Fail Count",
+          "description": "Program fail metric for flash (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "LaCie",
+      "common_types": [
+        "SATA",
+        "NVMe",
+        "SCSI"
+      ],
+      "notes": "This is a best-effort list of commonly observed attributes. For model-specific attribute maps consult vendor datasheets or smartmontools/CrystalDiskInfo output.",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Read Error Rate",
+          "description": "Rate of hardware read errors reported by the drive.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Spin-Up Time",
+          "description": "Average time to spin up the drive (vendor-dependent units).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Start/Stop Count",
+          "description": "Number of start/stop cycles (power/parking events).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Reallocated Sectors Count",
+          "description": "Count of bad sectors remapped to spare area.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Seek Error Rate",
+          "description": "Rate of errors while seeking, vendor-dependent.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Seek Time Performance",
+          "description": "Drive seek time performance metric (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Power-On Hours",
+          "description": "Total powered-on time of the drive (hours).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Spin Retry Count",
+          "description": "Number of spin-up retries.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Power Cycle Count",
+          "description": "Number of full power cycles.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 194,
+          "name": "Temperature (Degree C)",
+          "description": "Reported drive temperature.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 196,
+          "name": "Reallocation Event Count",
+          "description": "Count of remap (reallocation) operations.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 197,
+          "name": "Current Pending Sector Count",
+          "description": "Number of unstable sectors pending remap.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 198,
+          "name": "Uncorrectable Sector Count",
+          "description": "Count of uncorrectable read/write errors.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 199,
+          "name": "UltraDMA CRC Error Count",
+          "description": "Count of interface CRC errors (cabling/connection issues).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Critical Warning",
+          "description": "Composite critical warning bits (available spare, temp, reliability, read-only, volatile backup failed).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Composite Temperature",
+          "description": "Composite temperature (Kelvin-based field).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare",
+          "description": "Percentage of remaining spare capacity.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare Threshold",
+          "description": "Threshold for available spare (below means warning).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Percentage Used",
+          "description": "Percentage of drive life used (wear indicator).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Read",
+          "description": "Count of host data units read (units are device-specific).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Written",
+          "description": "Count of host data units written.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Read Commands",
+          "description": "Number of host read commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Write Commands",
+          "description": "Number of host write commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Controller Busy Time",
+          "description": "Controller busy time (milliseconds).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power Cycles",
+          "description": "Number of power cycles.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power On Hours",
+          "description": "Total power on hours.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Unsafe Shutdowns",
+          "description": "Number of unsafe shutdowns.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Media and Data Integrity Errors",
+          "description": "Count of media/data integrity errors.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Error Information Log Entries",
+          "description": "Number of error-information log entries.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": 241,
+          "name": "Total LBAs Written",
+          "description": "Total LBAs written (vendor-specific representation).",
+          "types": [
+            "SATA"
+          ]
+        }
+      ]
+    },
+    {
+      "manufacturer": "Huawei",
+      "common_types": [
+        "SATA",
+        "NVMe",
+        "SCSI"
+      ],
+      "notes": "This is a best-effort list of commonly observed attributes. For model-specific attribute maps consult vendor datasheets or smartmontools/CrystalDiskInfo output.",
+      "attributes": [
+        {
+          "id": 1,
+          "name": "Read Error Rate",
+          "description": "Rate of hardware read errors reported by the drive.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Spin-Up Time",
+          "description": "Average time to spin up the drive (vendor-dependent units).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Start/Stop Count",
+          "description": "Number of start/stop cycles (power/parking events).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Reallocated Sectors Count",
+          "description": "Count of bad sectors remapped to spare area.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Seek Error Rate",
+          "description": "Rate of errors while seeking, vendor-dependent.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Seek Time Performance",
+          "description": "Drive seek time performance metric (vendor-specific).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Power-On Hours",
+          "description": "Total powered-on time of the drive (hours).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Spin Retry Count",
+          "description": "Number of spin-up retries.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Power Cycle Count",
+          "description": "Number of full power cycles.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 194,
+          "name": "Temperature (Degree C)",
+          "description": "Reported drive temperature.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 196,
+          "name": "Reallocation Event Count",
+          "description": "Count of remap (reallocation) operations.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 197,
+          "name": "Current Pending Sector Count",
+          "description": "Number of unstable sectors pending remap.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 198,
+          "name": "Uncorrectable Sector Count",
+          "description": "Count of uncorrectable read/write errors.",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": 199,
+          "name": "UltraDMA CRC Error Count",
+          "description": "Count of interface CRC errors (cabling/connection issues).",
+          "types": [
+            "IDE",
+            "SATA",
+            "SCSI"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Critical Warning",
+          "description": "Composite critical warning bits (available spare, temp, reliability, read-only, volatile backup failed).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Composite Temperature",
+          "description": "Composite temperature (Kelvin-based field).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare",
+          "description": "Percentage of remaining spare capacity.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Available Spare Threshold",
+          "description": "Threshold for available spare (below means warning).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Percentage Used",
+          "description": "Percentage of drive life used (wear indicator).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Read",
+          "description": "Count of host data units read (units are device-specific).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Data Units Written",
+          "description": "Count of host data units written.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Read Commands",
+          "description": "Number of host read commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Host Write Commands",
+          "description": "Number of host write commands.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Controller Busy Time",
+          "description": "Controller busy time (milliseconds).",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power Cycles",
+          "description": "Number of power cycles.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Power On Hours",
+          "description": "Total power on hours.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Unsafe Shutdowns",
+          "description": "Number of unsafe shutdowns.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Media and Data Integrity Errors",
+          "description": "Count of media/data integrity errors.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": null,
+          "name": "Error Information Log Entries",
+          "description": "Number of error-information log entries.",
+          "types": [
+            "NVMe"
+          ]
+        },
+        {
+          "id": 240,
+          "name": "Controller Specific Metric",
+          "description": "Vendor/controller specific diagnostic metric.",
+          "types": [
+            "NVMe",
+            "SATA"
+          ]
+        }
+      ]
+    }
+  ]
+}
