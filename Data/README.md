@@ -1,9 +1,8 @@
 # s0nt3k's Online Data Files
 
-## SMART Attributes
+### JSON Files
 
- ***DriveSmartAttributes.json*** is a best-effort, manufacturer-level reference that aggregates commonly observed **SMART/health attributes** for twenty major drive vendors. The file includes a manufacturers array; each manufacturer object lists the vendor name, the device interface types they commonly produce (IDE/SATA/NVMe/SCSI), and an attributes list where each attribute record contains an id (numeric for ATA-style attributes or null for NVMe named fields), a friendly name, a short description, and the types the attribute applies to. It’s intended as a convenience lookup to annotate SMART output (for example, mapping numeric ATA attribute IDs to readable names or matching NVMe health fields), not as an authoritative per-model specification.
- 
- **Disclaimer:** SMART attribute implementations and ID assignments vary by vendor, controller, and model manufacturers frequently add vendor-specific attributes, reuse IDs, or expose different NVMe health fields so this JSON should be treated as a helpful starting point rather than a definitive source; always verify critical findings against vendor datasheets, model-specific documentation, or trusted tools like smartmontools/CrystalDiskInfo, and test against the exact drive model before making operational decisions.
+A ***JSON (JavaScript Object Notation)*** file is a plain-text, human-readable format for representing structured data using a small set of building blocks — objects (curly-braced key/value pairs), arrays, strings, numbers, booleans, and null — and is saved with a `.json` extension and served with the MIME type `application/json`. Because it’s language-independent and easy for both humans and machines to read and write, JSON is widely used for exchanging data between web services (APIs), storing configuration and settings, serializing objects for logs or persistence, and passing structured messages between programs or microservices. JSON is stricter than JavaScript literal syntax (for example, keys and strings must use double quotes), parsed by libraries available in virtually every programming language, and is ideal when you need a compact, readable way to represent nested data — but it’s not a database itself, so for large or frequently-queried datasets you’ll typically pair JSON with a proper storage system.
+
  
  ---
