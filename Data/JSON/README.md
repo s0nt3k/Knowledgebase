@@ -5,3 +5,7 @@
  **Disclaimer:** SMART attribute implementations and ID assignments vary by vendor, controller, and model manufacturers frequently add vendor-specific attributes, reuse IDs, or expose different NVMe health fields so this JSON should be treated as a helpful starting point rather than a definitive source; always verify critical findings against vendor datasheets, model-specific documentation, or trusted tools like smartmontools/CrystalDiskInfo, and test against the exact drive model before making operational decisions.
  
  ---
+
+ Version: **2.5.4**
+
+ Added Samsung S.M.A.R.T. Attribute ID's 174, 187, 190, and 232.
